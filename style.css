@@ -45,18 +45,20 @@ body {
 }
 
 #messages {
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-bottom: 10px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 
-    /* ocultar scroll */
-  scrollbar-width: thin;        /* Firefox */
-  scrollbar-color: transparent transparent; /* Firefox */
+  /* Para Firefox */
+  scrollbar-width: none;
 }
 
-/* Chrome, Edge, Safari */
+/* Para Chrome, Edge, Safari */
 #messages::-webkit-scrollbar {
-  width: 0px;                   /* elimina la barra */
-  background: transparent;
+  display: none;
 }
 
 .message {
