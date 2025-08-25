@@ -47,6 +47,16 @@ body {
 #messages {
   display:flex;
   flex-direction:column;
+
+    /* ocultar scroll */
+  scrollbar-width: thin;        /* Firefox */
+  scrollbar-color: transparent transparent; /* Firefox */
+}
+
+/* Chrome, Edge, Safari */
+#messages::-webkit-scrollbar {
+  width: 0px;                   /* elimina la barra */
+  background: transparent;
 }
 
 .message {
