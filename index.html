@@ -105,6 +105,16 @@ body {
   flex:1;                 
   padding-bottom:10px;
   overflow-y:auto;
+
+/* ocultar scroll */
+  scrollbar-width: thin;        /* Firefox */
+  scrollbar-color: transparent transparent; /* Firefox */
+}
+
+/* Chrome, Edge, Safari */
+#messages::-webkit-scrollbar {
+  width: 0px;                   /* elimina la barra */
+  background: transparent;
 }
 
 .message {
